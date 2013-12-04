@@ -1,0 +1,2 @@
+module GrayoutRails
+end
