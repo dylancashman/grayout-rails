@@ -16,23 +16,23 @@ the form fields or text.  This feedback will be available via a javascript toolt
 tags to provide graceful degradation for users that do not use javascript or use 
 screenreaders.
 
-form_for(@participant) do |f|
-  
-  f.text_field :some_field
-  f.text_area :another_field
-
-  grayout :if => @participant.has_valid_address?,
-          :message => "Participant needs a valid address before they can get mailings" do
-
-    f.select :publication_requested_id
-    f.select :delivery_method_id
-    f.select :participant_address_id
-  end
-
-  f.select :other_field_id
-
-  f.submit "Create"
-end
+    form_for(@participant) do |f|
+      
+      f.text_field :some_field
+      f.text_area :another_field
+    
+      grayout :if => @participant.has_valid_address?,
+              :message => "Participant needs a valid address before they can get mailings" do
+    
+        f.select :publication_requested_id
+        f.select :delivery_method_id
+        f.select :participant_address_id
+      end
+    
+      f.select :other_field_id
+    
+      f.submit "Create"
+    end
 
 ## Where I am now.
 
