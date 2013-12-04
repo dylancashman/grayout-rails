@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = GrayoutRails::VERSION
   s.authors     = ["Dylan Cashman"]
   s.email       = ["dylan.cashman@annkissam.com"]
-  s.homepage    = "www.annkissam.com"
+  s.homepage    = "http://www.annkissam.com"
   s.summary     = "Provides a view helper to gray out parts of the view conditionally, with feedback."
   s.description = "Provides a view helper to gray out parts of the view conditionally, with feedback."
 

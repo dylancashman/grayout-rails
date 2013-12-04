@@ -11,9 +11,10 @@ be filled out if some other context is true.  It's better to gray out the unavai
 fields, so that the user knows that this is the right page to fill them out.
 
 The application should also provide feedback to the user as to why they cannot select
-the form fields or text.  This feedback will be available via a javascript popup using
-[Shadow UI](http://amsul.ca/shadow-ui/).  It will also hopefully use `<alt>` tags to
-provide graceful degradation for users that do not use javascript or use screenreaders.
+the form fields or text.  This feedback will be available via a javascript tooltip using
+[JQuery UI's library](http://jqueryui.com/tooltip/).  It will also hopefully use `<alt>` 
+tags to provide graceful degradation for users that do not use javascript or use 
+screenreaders.
 
 form_for(@participant) do |f|
   
@@ -33,3 +34,13 @@ form_for(@participant) do |f|
   f.submit "Create"
 end
 
+## Where I am now.
+
+The helper just adds a div around the elements.  I've started to bring in the assets to
+use the JQuery UI library.  I need to add that into the helper.
+
+
+## Special Thanks
+
+Special thanks to simple_form - I looked at that gem as an example
+of how to add a view helper.
